@@ -1,0 +1,92 @@
+@import url('reset.css');
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	background: greenyellow;
+    padding: 40px 0;
+	line-height: 28px;
+	
+}
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+    background:rgb(76, 238, 76);
+}
+
+.main-menu a {
+	display: block;
+	text-decoration: none;
+	padding: 20px 40px;
+    color: green;
+}
+
+.main-menu > li {
+	position: relative;
+    background: yellow;
+    text-transform: uppercase;
+}
+
+.main-menu > li:hover .new-ul {
+	display: block;
+}
+
+.new-ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	display: none;
+    padding: 40px 0 0;
+}
+
+.new-ul  li {
+	background: rgba(249, 249, 9, 0.856);
+    text-align: center;
+	position: relative;
+}
+
+.site-ul {
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    display: none;
+}
+
+.new-ul > li:hover .site-ul {
+    display: block;
+}
+
+.footer {
+    background: green;
+    padding: 60px 0;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hidden {
+	width: 0;
+	height: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+.footer-icon {
+	width: 80px;
+	height: 80px;
+	fill: blue;
+}
+
+.footer-icon:hover {
+	fill: #000;
+}
+
